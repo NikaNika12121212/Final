@@ -1,11 +1,11 @@
-import "./styles/global.css";
+import "./Styles/global.css";
 import styles from "./App.module.css";
-import { useTheme }      from "./hooks/useTheme";
-import { useDictionary } from "./hooks/useDictionary";
-import Navbar     from "./components/Navbar";
-import SearchBar  from "./components/SearchBar";
-import WordResult from "./components/WordResult";
-import { Spinner, EmptyHint, NotFound } from "./components/States";
+import { useTheme }      from "./Hooks/useTheme";
+import { useDictionary } from "./Hooks/useDictionary";
+import Navbar     from "./Components/Navbar";
+import SearchBar  from "./Components/SearchBar";
+import WordResult from "./Components/WordResult";
+import { Spinner, EmptyHint, NotFound } from "./Components/States";
 
 export default function App() {
   const { dark, toggleDark, fontKey, setFontKey } = useTheme();
