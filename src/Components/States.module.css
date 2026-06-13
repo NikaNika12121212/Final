@@ -1,0 +1,42 @@
+.spinnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  gap: 18px;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border: 6px solid var(--border);
+  border-top-color: var(--purple);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.hintBox,
+.errorBox {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hintTitle,
+.errorTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hintText,
+.errorText {
+  color: var(--subtext);
+  font-size: 18px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.errorTitle {
+  color: var(--red);
+}

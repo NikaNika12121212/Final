@@ -1,0 +1,164 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background: rgba(164, 69, 237, 0.12);
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fontDropdown {
+  position: relative;
+  width: 220px;
+}
+
+.fontToggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 44px 12px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--bg) url("../assets/Path 3.png") no-repeat right 16px center;
+  background-size: 12px 6px;
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.fontToggle.open {
+  transform: translateY(-1px);
+}
+
+.fontToggle:focus {
+  outline: none;
+  border-color: rgba(164, 69, 237, 0.75);
+  box-shadow: 0 0 0 4px rgba(164, 69, 237, 0.18);
+}
+
+:root[data-theme="dark"] .fontToggle {
+  box-shadow: 0 0 0 1px transparent, 0 0 12px rgba(164, 69, 237, 0.15);
+  border-color: rgba(164, 69, 237, 0.35);
+}
+
+.fontOptions {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+:root[data-theme="dark"] .fontOptions {
+  border-color: rgba(164, 69, 237, 0.4);
+  box-shadow: 0 16px 40px rgba(164, 69, 237, 0.18);
+}
+
+.fontOption {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fontOption:hover,
+.fontOption:focus-visible {
+  background: rgba(164, 69, 237, 0.08);
+}
+
+.fontOptionSelected {
+  background: rgba(164, 69, 237, 0.2);
+  color: var(--purple);
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(117, 117, 117, 0.2);
+}
+
+.modeIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+.modeControls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 48px;
+  height: 28px;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleTrack {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(117, 117, 117, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.toggleThumb {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.toggle input:checked + .toggleTrack {
+  background: var(--purple);
+}
+
+.toggle input:checked + .toggleTrack + .toggleThumb {
+  transform: translateX(20px);
+}
+
+.bookIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}

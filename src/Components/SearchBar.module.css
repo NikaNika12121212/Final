@@ -1,0 +1,48 @@
+.wrapper {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.searchField {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 18px 56px 18px 24px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.inputError {
+  border-color: var(--red);
+}
+
+.searchIconButton {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--purple);
+}
+
+.errorText {
+  width: 100%;
+  color: var(--red);
+  font-size: 14px;
+  margin-top: 8px;
+}

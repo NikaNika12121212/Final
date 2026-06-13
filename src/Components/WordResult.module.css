@@ -1,0 +1,150 @@
+.playBtn {
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(164, 69, 237, 0.15);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.playBtnHover {
+  background: #a445ed;
+}
+
+.wordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.wordTitle {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.phonetic {
+  color: var(--purple);
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.synRow {
+  margin-top: 24px;
+}
+
+.synLabel {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--subtext);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.synChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.synChip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.synChipAnt {
+  border-color: rgba(255, 82, 82, 0.3);
+  background: rgba(255, 82, 82, 0.12);
+  color: var(--red);
+}
+
+.defItem {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 18px;
+  line-height: 1.8;
+}
+
+.defBullet {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+
+.example {
+  color: var(--subtext);
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.meaningSection {
+  margin-bottom: 36px;
+}
+
+.posRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.posWord {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.posLine {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.meaningLabel {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.defList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sourceBox {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.sourceLabel {
+  color: var(--subtext);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
