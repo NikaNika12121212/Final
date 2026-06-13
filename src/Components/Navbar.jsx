@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./Navbar.module.css";
-import { FONTS } from "../hooks/useTheme";
+import { FONTS } from "../Hooks/useTheme";
 import MoonIcon from "../assets/Moon.png";
 import bookIconImg from "../assets/iconoir_book.png";
 
